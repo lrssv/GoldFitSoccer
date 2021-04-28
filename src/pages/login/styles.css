@@ -1,0 +1,62 @@
+/* ESTILOS GLOBAIS */
+
+a{
+    text-decoration: none;
+    margin: 2px;
+    color: #313B44;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h3{
+    color: #313B44;
+}
+
+p{
+    margin: 2px;
+}
+
+/*ESTILOS LOGIN */
+.container{
+    width: 340px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.img-logo{
+    height: 80%;
+    width: 80%;
+    margin: 5px;
+}
+
+.grid-icons{
+    display: grid;
+}
+
+.grid-icons figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #313B44;
+}
+
+.grid-register{
+    background-color: #CA973C;
+    padding: 4px;
+    align-items: center;
+}
+
+.grid-register .coachInvited, .coach, .athlete{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+

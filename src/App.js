@@ -1,10 +1,8 @@
-import './App.css';
+import Routes from './_config/routes';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-    </div>
+   <Routes/>
   );
 }
 
