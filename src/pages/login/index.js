@@ -17,7 +17,7 @@ export default function Login() {
             <div className="grid-icons">
                 <figure>
                     <img className="img-coach" src={Coach} alt="Treinador"/>
-                    <Link className="link-coach" to="">Treinador</Link>
+                    <Link className="link-coach" to="/login-credentials">Treinador</Link>
                 </figure>
                 <figure>
                     <img className="img-athlete" src={Athlete} alt="Atleta"/>

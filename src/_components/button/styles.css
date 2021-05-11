@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Share+Tech&display=swap');
+
+.btn{
+    background-color: #489152;
+    width: 110px;
+    height: 36px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+.btn .entrar{
+    font-weight: bold;
+    font-style: normal; 
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}

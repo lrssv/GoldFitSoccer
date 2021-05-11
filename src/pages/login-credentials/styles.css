@@ -1,0 +1,24 @@
+/* LOGIN-CREDENTIALS STYLES */
+.container{
+    width: 340px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.img-logo{
+    height: 80%;
+    width: 80%;
+    margin: 5px;
+}
+
+.login-recover{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}

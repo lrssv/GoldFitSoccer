@@ -1,4 +1,4 @@
-/* ESTILOS GLOBAIS */
+/* GLOBAL STYLES */
 
 a{
     text-decoration: none;
@@ -19,7 +19,7 @@ p{
     margin: 2px;
 }
 
-/*ESTILOS LOGIN */
+/* LOGIN STYLES */
 .container{
     width: 340px;
     margin: auto;
