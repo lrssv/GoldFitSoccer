@@ -21,15 +21,15 @@ export default function Login() {
                 </figure>
                 <figure>
                     <img className="img-athlete" src={Athlete} alt="Atleta"/>
-                    <Link className="link-athlete" to="">Atleta</Link>
+                    <Link className="link-athlete" to="/login-credentials">Atleta</Link>
                 </figure>
                 <figure>
                     <img className="img-researcher" src={Researcher} alt="Pesquisador"/>
-                    <Link className="link-researcher" to="">Pesquisador</Link>
+                    <Link className="link-researcher" to="/login-credentials">Pesquisador</Link>
                 </figure>
                 <figure>
                     <img className="img-adm" src={Admnistrator} alt="Admnistrador"/>
-                    <Link className="link-adm" to="">Admnistrador</Link>
+                    <Link className="link-adm" to="/login-credentials">Admnistrador</Link>
                 </figure>
             </div>
             <div className="grid-register">

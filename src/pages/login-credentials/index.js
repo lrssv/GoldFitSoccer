@@ -4,26 +4,27 @@ import { Link } from 'react-router-dom'
 import Logo from '../../_assets/logo.png'
 import ButtonFilled from '../../_components/button/index.js'
 
+
 import TextField from '@material-ui/core/TextField';
 
-
+import './styles.css'
 
 export default function LoginCreditals (){
-    return(
+    return (
         <div className="container">
             <img className="img-logo" src={Logo} alt="logo"/>
-            <form>
+            <div className="form">
                 <div className="input-email">
                     <p>E-mail</p>
-                    <TextField id="outlined-basic" label="" variant="outlined" />
+                    <TextField style={{width:300}} id="outlined-basic" label="" variant="outlined" />
                 </div>
                 <div className="input-password"> 
-                    <p>senha</p>
-                    <TextField id="outlined-basic" label="" variant="outlined" />
-                </div>    
-            </form>
+                    <p>Senha</p>
+                    <TextField  style={{width:300}} id="outlined-basic" label="" variant="outlined" />
+                </div>  
+            </div>
             <ButtonFilled className="btn-login" route="/" text="Entrar"/>
-            <p>Esqueceu a senha?</p>
+            <p className="forgot-password">Esqueceu a senha?</p>
             <div className="login-recover">
                 <Link to="">Clique aqui </Link>
                 <p>para recuperar</p>
