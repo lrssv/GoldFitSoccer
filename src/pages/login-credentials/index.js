@@ -23,10 +23,10 @@ export default function LoginCreditals (){
                     <TextField  style={{width:300}} id="outlined-basic" label="" variant="outlined" />
                 </div>  
             </div>
-            <ButtonFilled className="btn-login" route="/" text="Entrar"/>
+            <ButtonFilled className="btn-login" route="/home" text="Entrar"/>
             <p className="forgot-password">Esqueceu a senha?</p>
             <div className="login-recover">
-                <Link to="">Clique aqui </Link>
+                <Link to="\" >Clique aqui </Link>
                 <p>para recuperar</p>
             </div>
         </div>
