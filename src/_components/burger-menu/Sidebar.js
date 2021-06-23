@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import SubMenu from './Submenu';
+import * as AiIcons from 'react-icons/ai';
 
 import Logo from './../../_assets/logo.png'
 
@@ -28,7 +29,7 @@ const NavIcon = styled(Link)`
 
 const SidebarNav = styled.nav`
   background: #CA973C;
-  width: 250px;
+  width: 300px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -58,7 +59,7 @@ const Sidebar = () => {
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
             <NavIcon to='#'>
-            <img className="img-athlete" src={Logo} alt="Atleta" onClick={showSidebar} />
+            <AiIcons.AiOutlineClose onClick={showSidebar}/>
             </NavIcon>
             {SidebarData.map((item, index) => {
               return <SubMenu item={item} key={index} />;

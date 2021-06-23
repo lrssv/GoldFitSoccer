@@ -3,89 +3,112 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
+import * as BsIcons from 'react-icons/bs';
+import * as HiIcons from 'react-icons/hi';
+import * as CgIcons from 'react-icons/cg';
 
 export const SidebarData = [
   {
-    title: 'Overview',
+    title: 'Inicio',
     path: '/overview',
     icon: <AiIcons.AiOutlineHome/>,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
-
-    subNav: [
-      {
-        title: 'Users',
-        path: '/overview/users',
-        icon: <IoIcons.IoIosPaper />
-      },
-      {
-        title: 'Revenue',
-        path: '/overview/revenue',
-        icon: <IoIcons.IoIosPaper />
-      }
-    ]
   },
   {
-    title: 'Reports',
+    title: 'Cadastrar Atleta',
     path: '/reports',
-    icon: <IoIcons.IoIosPaper />,
+    icon: <AiIcons.AiOutlineUserAdd />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+  },
+  {
+    title: 'Avaliar Atleta',
+    path: '/reports',
+    icon: <FaIcons.FaWpforms />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
     subNav: [
       {
-        title: 'Reports',
+        title: 'Antropométrica',
         path: '/reports/reports1',
-        icon: <IoIcons.IoIosPaper />,
+        icon: <AiIcons.AiOutlineRight/>,
         cName: 'sub-nav'
       },
       {
-        title: 'Reports 2',
+        title: 'Aeróbica',
         path: '/reports/reports2',
-        icon: <IoIcons.IoIosPaper />,
+        icon: <AiIcons.AiOutlineRight/>,
         cName: 'sub-nav'
       },
       {
-        title: 'Reports 3',
+        title: 'Potencial Esportivo',
         path: '/reports/reports3',
-        icon: <IoIcons.IoIosPaper />
+        icon: <AiIcons.AiOutlineRight/>,
       }
     ]
   },
   {
-    title: 'Products',
-    path: '/products',
-    icon: <FaIcons.FaCartPlus />
-  },
-  {
-    title: 'Team',
-    path: '/team',
-    icon: <IoIcons.IoMdPeople />
-  },
-  {
-    title: 'Messages',
+    title: 'Laudos',
     path: '/messages',
-    icon: <FaIcons.FaEnvelopeOpenText />,
+    icon: <BsIcons.BsGraphUp />,
 
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
     subNav: [
       {
-        title: 'Message 1',
+        title: 'Individual',
         path: '/messages/message1',
-        icon: <IoIcons.IoIosPaper />
+        icon: <AiIcons.AiOutlineRight/>,
       },
       {
-        title: 'Message 2',
+        title: 'Comparativo',
         path: '/messages/message2',
-        icon: <IoIcons.IoIosPaper />
+        icon: <AiIcons.AiOutlineRight/>,
       }
     ]
   },
   {
-    title: 'Support',
+    title: 'Relatórios Gerenciais',
+    path: '/messages',
+    icon: <HiIcons.HiOutlineDocumentReport />,
+
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: 'Potencial',
+        path: '/messages/message1',
+        icon: <AiIcons.AiOutlineRight/>,
+      },
+      {
+        title: 'Indicadores',
+        path: '/messages/message2',
+        icon: <AiIcons.AiOutlineRight/>,
+      }, 
+      {
+        title: 'Evolução',
+        path: '/messages/message2',
+        icon: <AiIcons.AiOutlineRight/>,
+      }
+    ]
+  },
+  {
+    title: 'Questionário Atleta',
     path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />
+    icon: <BsIcons.BsClipboardData />
+  },
+  {
+    title: 'Perfil',
+    path: '/support',
+    icon: <CgIcons.CgProfile />
+  },
+  {
+    title: 'Sair',
+    path: '/support',
+    icon: <AiIcons.AiOutlineCloseCircle />
   }
 ];
