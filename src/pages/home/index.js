@@ -13,11 +13,15 @@ import Tabs from './../../_components/table/tabs'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Selector from './../../_components/selector'
+import TexFieldAutoComplete from './../../_components/textfield-autocomplete'
 
 export default function InitialView(){
     return (
         <div className="home-container">
-          <Selector/>
+          <Router>
+            <Sidebar/>
+            <Switch/>
+          </Router>
         </div>
       );
 }
