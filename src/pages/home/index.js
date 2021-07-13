@@ -12,12 +12,12 @@ import Tabs from './../../_components/table/tabs'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Slider from './../../_components/slider'
+import Selector from './../../_components/selector'
 
 export default function InitialView(){
     return (
         <div className="home-container">
-          <Slider/>
+          <Selector/>
         </div>
       );
 }
