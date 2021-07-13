@@ -12,10 +12,20 @@ import Tabs from './../../_components/table/tabs'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import Slider from './../../_components/slider'
+
 export default function InitialView(){
     return (
-        <div>
-          <h1>Potencial Esportivo</h1>
+        <div className="home-container">
+          <Slider/>
+        </div>
+      );
+}
+
+/* 
+Table
+
+<h1>Potencial Esportivo</h1>
           <div className="container-home">
           <Tabs>
             <div label="Potencial Esportivo">
@@ -38,11 +48,10 @@ export default function InitialView(){
             </div>
           </Tabs>
         </div>
-        </div>
-      );
-}
 
-/* return (
+
+
+return (
         <Router>
         <Sidebar />
         <Switch>
@@ -51,6 +60,7 @@ export default function InitialView(){
     );
     /*
 
+CARD
       /*</div>
             <Header/>
             <div className="cards">
