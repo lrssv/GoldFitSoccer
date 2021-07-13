@@ -2,68 +2,47 @@ import React from 'react'
 
 import './styles.css'
 
-import photo from './../../_assets/athlete-image.png'
-import Card from './../../_components/cards'
-import Header from './../../_components/header'
-
 import Sidebar from '../../_components/burger-menu/Sidebar'
-
 import Tabs from './../../_components/table/tabs'
-
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-import Selector from './../../_components/selector'
 import TexFieldAutoComplete from './../../_components/textfield-autocomplete'
+import SectionSportPotencial from './table-pages/sport-potencial'
 
 export default function InitialView(){
     return (
         <div className="home-container">
-          <Router>
             <Sidebar/>
-            <Switch/>
-          </Router>
+            <div className="right-container">
+              <div className="options-container">
+                <Tabs>
+                  <div label="Potencial Esportivo">
+                  <SectionSportPotencial/>
+                  </div>
+                  <div label="Fatores Antropométricos">
+                    After 'while, <em>Crocodile</em>!
+                  </div>
+                  <div label="Fatores Fisico-motores">
+                    Nothing to see here, this tab is <em>extinct</em>!
+                  </div>
+                  <div label="Maturação Biológica">
+                    See ya later, <em>Alligator</em>!
+                  </div>
+                  <div label="Apoio dos Familiares">
+                    After 'while, <em>Crocodile</em>!
+                  </div>
+                  <div label="Habilidades Táticas">
+                    Nothing to see here, this tab is <em>extinct</em>!
+                  </div>
+                </Tabs>
+                <div className="selectors-container">
+                </div>
+              </div> 
+            </div>
         </div>
       );
 }
 
-/* 
-Table
 
-<h1>Potencial Esportivo</h1>
-          <div className="container-home">
-          <Tabs>
-            <div label="Potencial Esportivo">
-              See ya later, <em>Alligator</em>!
-            </div>
-            <div label="Fatores Antropométricos">
-              After 'while, <em>Crocodile</em>!
-            </div>
-            <div label="Fatores Fisico-motores">
-              Nothing to see here, this tab is <em>extinct</em>!
-            </div>
-            <div label="Maturação Biológica">
-              See ya later, <em>Alligator</em>!
-            </div>
-            <div label="Apoio dos Familiares">
-              After 'while, <em>Crocodile</em>!
-            </div>
-            <div label="Habilidades Táticas">
-              Nothing to see here, this tab is <em>extinct</em>!
-            </div>
-          </Tabs>
-        </div>
-
-
-
-return (
-        <Router>
-        <Sidebar />
-        <Switch>
-        </Switch>
-      </Router>
-    );
-    /*
-
+/*
 CARD
       /*</div>
             <Header/>
