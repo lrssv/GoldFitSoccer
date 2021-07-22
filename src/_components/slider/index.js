@@ -11,15 +11,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const PrettoSlider = withStyles({
-  root: {
-    color: '#52af77',
-    height: 8,
-  }})(Slider)
 
 
-export default function DiscreteSlider() {
+export default function DiscreteSlider({sliderColor}) {
   const classes = useStyles();
+
+  const PrettoSlider = withStyles({
+    root: {
+      color: sliderColor,
+      height: 8,
+  }})(Slider)
 
   return (
     <div className={classes.root}>
@@ -32,6 +33,13 @@ export default function DiscreteSlider() {
         min={1}
         max={4}
       />
+      <div className="rangeNames-label">
+                <p>Baixo</p>
+                <p>Mediano</p>
+                <p>Alto</p>
+                <p>Excelência</p>
+            </div>
       </div>
+
   );
 }

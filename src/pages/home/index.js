@@ -33,8 +33,8 @@ export default function InitialView(){
                     Nothing to see here, this tab is <em>extinct</em>!
                   </div>
                 </Tabs>
-                <div className="selectors-container">
                 </div>
+                <div className="selectors-container">
               </div> 
             </div>
         </div>

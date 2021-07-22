@@ -5,6 +5,14 @@
 }
 
 .right-container{
-    width: 450px;
-    height: 400px;
+    width: 420px;
+    height: 550px;
+    padding-top: 10px;
+    border: 1px solid #5B656F;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.options-container{
+    text-align: center;
 }
